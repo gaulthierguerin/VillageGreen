@@ -180,12 +180,13 @@ SELECT nom, LENGTH(CONCAT(nom, prenom)) AS 'Nombre de lettres' FROM employe
 
 --1. Calculer le nombre d'employés de chaque titre.
 
-SELECT titre, COUNT(nom) FROM employe
+SELECT titre, COUNT(nom) AS 'Nombre d''employé' FROM employe
 GROUP BY titre
 
 --2. Calculer la moyenne des salaires et leur somme, par région.
 
-
+SELECT titre, AVG(salaire) AS MoyenneSalaire, SUM(salaire) AS SommeSalaire FROM employe
+GROUP BY titre
 
 --3. Afficher les numéros des départements ayant au moins 3 employés.
 
@@ -198,12 +199,13 @@ GROUP BY titre
 /*5. Rechercher le salaire maximum et le salaire minimum parmi tous les
 salariés et l'écart entre les deux.*/
 
-
+SELECT MAX(salaire) AS SalaireMax, MIN(salaire) AS SalaireMin, MAX(salaire)-MIN(salaire) AS Ecart FROM employe
 
 --6. Rechercher le nombre de titres différents.
 
 SELECT DISTINCT titre FROM employe
 WHERE (SELECT COUNT(titre) AS 'nombre de titre' from employe)
+GROUP BY titre
 
 --7. Pour chaque titre, compter le nombre d'employés possédant ce titre.
 
