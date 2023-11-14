@@ -8,8 +8,7 @@ INSERT INTO
         `employee_address`,
         `employee_status`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'salut3',
         '2',
@@ -29,8 +28,7 @@ INSERT INTO
         `employee_address`,
         `employee_status`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'salut2',
         '2',
@@ -50,8 +48,7 @@ INSERT INTO
         `employee_address`,
         `employee_status`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'salut1',
         '2',
@@ -77,8 +74,7 @@ INSERT INTO
         `client_isCompany`,
         `employee_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'xptitmaki@gmail.com',
         'xptitmaki',
@@ -110,8 +106,7 @@ INSERT INTO
         `client_isCompany`,
         `employee_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'salut@gmail.com',
         'salut',
@@ -143,8 +138,7 @@ INSERT INTO
         `client_isCompany`,
         `employee_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'salut1@gmail.com',
         'salut1',
@@ -171,8 +165,7 @@ INSERT INTO
         `address_city`,
         `customer_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Guérin',
         'Gaulthier',
@@ -194,8 +187,7 @@ INSERT INTO
         `address_city`,
         `customer_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Guérin',
         'Olivier',
@@ -217,8 +209,7 @@ INSERT INTO
         `address_city`,
         `customer_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Roussel',
         'Delphine',
@@ -230,18 +221,24 @@ VALUES
     );
 
 INSERT INTO
-    `category` (`category_id`, `category_name`, `category_desc`)
-VALUES
-    (
+    `category` (
+        `category_id`,
+        `category_name`,
+        `category_desc`
+    )
+VALUES (
         NULL,
         'Pianos',
         'Ensemble d''instruments à touches, pianos, claviers midi, synthétiseurs'
     );
 
 INSERT INTO
-    `category` (`category_id`, `category_name`, `category_desc`)
-VALUES
-    (
+    `category` (
+        `category_id`,
+        `category_name`,
+        `category_desc`
+    )
+VALUES (
         NULL,
         'Guitare',
         'Ensemble d''instruments à cordes grattées, guitares acoustiques, basses, électriques, ukulélés'
@@ -254,8 +251,7 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Pianos classiques',
         'Ensemble de pianos classiques',
@@ -269,8 +265,7 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Claviers midi',
         'Ensemble de claviers midi',
@@ -284,8 +279,7 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Synthétiseurs',
         'Ensemble de synthétiseurs',
@@ -299,8 +293,12 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (NULL, 'Guitare', 'Ensemble de guitares', '2');
+VALUES (
+        NULL,
+        'Guitare',
+        'Ensemble de guitares',
+        '2'
+    );
 
 INSERT INTO
     `subcategory` (
@@ -309,8 +307,7 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Basses',
         'Ensemble de guitares basses',
@@ -324,8 +321,12 @@ INSERT INTO
         `subcategory_desc`,
         `category_id`
     )
-VALUES
-    (NULL, 'Ukulélés', 'Ensemble de ukulélés', '2');
+VALUES (
+        NULL,
+        'Ukulélés',
+        'Ensemble de ukulélés',
+        '2'
+    );
 
 INSERT INTO
     `product` (
@@ -339,8 +340,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Guitare Electrique',
         'Guitare ayant besoin d''un ampli ',
@@ -364,8 +364,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Guitare Basse',
         'Guitare basse ayant besoin d''un ampli',
@@ -389,8 +388,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Ukulélé',
         'Petite guitare à quatre cordes',
@@ -414,8 +412,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Piano classique',
         'Piano classique doté de 88 touches',
@@ -439,8 +436,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Clavier midi',
         'Clavier branchable à une carte son pour faire de la MAO',
@@ -464,8 +460,7 @@ INSERT INTO
         `product_brand`,
         `subcategory_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Synthétiseur',
         'Clavier de 88 touches doté d''une banque de sons',
@@ -486,8 +481,7 @@ INSERT INTO
         `creditcard_expirationyear`,
         `customer_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Orange Bank',
         '5341567898741452',
@@ -504,10 +498,9 @@ INSERT INTO
         `creditcard_expirationmonth`,
         `creditcard_expirationyear`,
 
-        `customer_id`
-    )
-VALUES
-    (
+`customer_id`
+)
+VALUES (
         NULL,
         'Crédit Agricole',
         '1234567898765432',
@@ -525,8 +518,7 @@ INSERT INTO
         `creditcard_expirationyear`,
         `customer_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'Société Générale',
         '9876543212345678',
@@ -543,8 +535,7 @@ INSERT INTO
         `invoice_date`,
         `invoice_totalPrice`
     )
-VALUES
-    (
+VALUES (
         NULL,
         'carte bancaire',
         '1',
@@ -560,8 +551,13 @@ INSERT INTO
         `invoice_date`,
         `invoice_totalPrice`
     )
-VALUES
-    (NULL, 'virement', '0', '2023-11-10', '3000.99');
+VALUES (
+        NULL,
+        'virement',
+        '0',
+        '2023-11-10',
+        '3000.99'
+    );
 
 INSERT INTO
     `invoice` (
@@ -571,8 +567,13 @@ INSERT INTO
         `invoice_date`,
         `invoice_totalPrice`
     )
-VALUES
-    (NULL, 'virement', '1', '2023-11-10', '1562.38');
+VALUES (
+        NULL,
+        'virement',
+        '1',
+        '2023-11-10',
+        '1562.38'
+    );
 
 INSERT INTO
     `customerOrder` (
@@ -584,8 +585,7 @@ INSERT INTO
         `address_id`,
         `invoice_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         '2023-11-10 10:40:58.000000',
         'Payé',
@@ -605,8 +605,7 @@ INSERT INTO
         `address_id`,
         `invoice_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         '2023-11-10 10:40:58.000000',
         'Non payé',
@@ -626,8 +625,7 @@ INSERT INTO
         `address_id`,
         `invoice_id`
     )
-VALUES
-    (
+VALUES (
         NULL,
         '2023-11-10 10:40:58.000000',
         'Payé',
@@ -645,8 +643,7 @@ INSERT INTO
         `product_id`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, '1', '599.99', '1', '1');
+VALUES (NULL, '1', '599.99', '1', '1');
 
 INSERT INTO
     `orderdetails` (
@@ -656,8 +653,7 @@ INSERT INTO
         `product_id`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, '2', '3000.99', '4', '2');
+VALUES (NULL, '2', '3000.99', '4', '2');
 
 INSERT INTO
     `orderdetails` (
@@ -667,8 +663,7 @@ INSERT INTO
         `product_id`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, '2', '1562.38', '5', '3');
+VALUES (NULL, '2', '1562.38', '5', '3');
 
 INSERT INTO
     `shipping` (
@@ -677,8 +672,7 @@ INSERT INTO
         `delivery_company`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, '2023-11-11', 'UPS', '1');
+VALUES (NULL, '2023-11-11', 'UPS', '1');
 
 INSERT INTO
     `shipping` (
@@ -687,8 +681,7 @@ INSERT INTO
         `delivery_company`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, NULL, NULL, '2');
+VALUES (NULL, NULL, NULL, '2');
 
 INSERT INTO
     `shipping` (
@@ -697,15 +690,20 @@ INSERT INTO
         `delivery_company`,
         `customerOrder_id`
     )
-VALUES
-    (NULL, '2023-11-12', 'DPD', '3');
+VALUES (NULL, '2023-11-12', 'DPD', '3');
 
 INSERT INTO
-    `isShipped` (`product_id`, `shipping_id`, `qty_delivered`)
-VALUES
-    ('1', '1', '1');
+    `isShipped` (
+        `product_id`,
+        `shipping_id`,
+        `qty_delivered`
+    )
+VALUES ('1', '1', '1');
 
 INSERT INTO
-    `isShipped` (`product_id`, `shipping_id`, `qty_delivered`)
-VALUES
-    ('5', '3', '1');
+    `isShipped` (
+        `product_id`,
+        `shipping_id`,
+        `qty_delivered`
+    )
+VALUES ('5', '3', '1');
